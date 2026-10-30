@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f7f7f7;
+    background-image:
+        radial-gradient(circle at 10% 20%, #f8e9cd 0%, transparent 35%),
+    url(/imagens/b00f07a639355b209579b55b3f66e176.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #474440;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+
+    padding: 30px 15px;
+}
+
+
+ /* CABEÇALHO*/
+
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(
+        135deg,
+        #ffffffe3,
+        #bbbbbbe7
+    );
+
+    border: 5px double #b76c58;
+    border-radius: 18px 18px 5px 5px;
+
+    padding: 45px 35px 25px;
+    text-align: center;
+
+    box-shadow: 0 8px 15px rgba(80, 48, 32, 0.15);
+}
+
+/* SUBTÍTULO */
+
+header h2 {
+    color: #000000;
+
+    font-size: 23px;
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+/* TEXTO DO CABEÇALHO */
+
+header p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+
+    font-size: 16px;
+    color: #494948;
+}
+
+
+  /*  MENU DE NAVEGAÇÃO */
+
+
+nav {
+    background-color: #a85d50;
+
+    padding: 16px;
+    margin-top: 25px;
+
+    border-radius: 8px;
+    border: 3px solid #85483e;
+
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.15);
+}
+
+nav a {
+    display: inline-block;
+
+    color: #fff0d9;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin: 0 20px;
+    padding: 5px 8px;
+
+    transition: 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+nav a:hover {
+    color: #ffe39b;
+    transform: translateY(-3px);
+
+    text-decoration: underline;
+}
+
+/*  CONTEÚDO PRINCIPAL*/
+  
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/*    SEÇÕES */
+
+main section {
+    background-color: #fff6e6;
+
+    border: 2px solid #d4ae87;
+    border-left: 8px solid #b86c59;
+
+    border-radius: 8px;
+
+    padding: 30px 35px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 12px rgba(80, 48, 32, 0.10);
+}
+
+/* TÍTULOS DAS SEÇÕES */
+
+main section h2 {
+    color: #a84e49;
+
+    font-size: 29px;
+    margin-bottom: 18px;
+
+    border-bottom: 2px dashed #d6ad89;
+    padding-bottom: 10px;
+}
+
+/* PARÁGRAFOS */
+
+main section p {
+    color: #594838;
+    font-size: 16px;
+
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* TÍTULOS MENORES */
+
+main section h3 {
+    color: #577c7a;
+
+    font-size: 19px;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+/*    SEÇÃO DA VILA */
+
+.Vila {
+    text-align: center;
+
+    background-color: #e9d3b2;
+
+    border: 5px double #b76c58;
+    border-radius: 15px;
+
+    padding: 25px;
+}
+
+/* IMAGEM DA VILA */
+
+.Vila img {
+    display: block;
+
+    width: 100%;
+    max-width: 850px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    border: 6px solid #fff5e3;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* LEGENDA */
+
+.Vila figcaption {
+    color: #855247;
+
+    font-size: 15px;
+    font-style: italic;
+
+    margin-top: 15px;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    max-width: 1100px;
+    margin: 30px auto 0;
+
+    background-color: #90bbb9;
+
+    color: #fff1d8;
+
+    padding: 25px;
+    text-align: center;
+
+  
+}
+
+footer p {
+    font-style: italic;
+    font-size: 20px ;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+/* IMAGEM DECORATIVA DO RODAPÉ */
+
+footer img {
+    max-width: 180px;
+    height: auto;
+
+    margin-top: 10px;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 30px 15px 20px;
+    }
+
+    header h1 {
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    header h2 {
+        font-size: 19px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    main section h2 {
+        font-size: 24px;
+    }
+
+    main section h3 {
+        font-size: 17px;
+    }
+
+}
